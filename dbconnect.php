@@ -2,13 +2,22 @@
 
 $database = [
     'host' => 'localhost',
-    'username' => 'root',
-    'password' => '',
-    'dbname' => 'demo'
+    'port' => 3306,
+    'dbname' => 'myapp',
+    'username' => 'newuser',
+    'password' => 'newpassword',
+    'charset' => 'utf8mb4',
 ];
 
-$connection = new PDO(
-    'mysql:host=' . $database['host'] . ';dbname=' . $database['dbname'],
-    $database['username'],
-    $database['password']
-);
+// Create a PDO connection
+try {
+    $connection = new PDO(
+        'mysql:host=' . $database['host'] . ';port=' . $database['port'] . ';dbname=' . $database['dbname'] . ';charset=' . $database['charset'],
+        $database['username'],
+        $database['password']
+    );
+    // Set PDO to throw exceptions on error
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
