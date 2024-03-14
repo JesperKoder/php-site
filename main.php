@@ -11,7 +11,7 @@
 
     
       <ul class="mt-6 border-t border-gray-200">
-        <li class="py-4">New Item</li>
+        <li class="py-4 border border-gray-200">New Item</li>
       </ul>
   
     
