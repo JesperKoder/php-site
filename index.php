@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Rental</title>
+    <title>Todo list</title>
 </head>
 <body>
+
+<?php require('scripts/dbconnect.php'); ?>
 
 <?php require('header.php'); ?>
 
