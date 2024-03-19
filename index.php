@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<?php require('scripts/dbconnect.php'); ?>
+<?php require('dbconnect.php'); ?>
 
 <?php require('header.php'); ?>
 
