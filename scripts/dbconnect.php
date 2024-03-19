@@ -1,23 +1,12 @@
 <?php 
 
-$database = [
-    'host' => 'localhost',
-    'port' => 3306,
-    'dbname' => 'myapp',
-    'username' => 'newuser',
-    'password' => 'newpassword',
-    'charset' => 'utf8mb4',
-];
 
-// Create a PDO connection
-try {
-    $connection = new PDO(
-        'mysql:host=' . $database['host'] . ';port=' . $database['port'] . ';dbname=' . $database['dbname'] . ';charset=' . $database['charset'],
-        $database['username'],
-        $database['password']
-    );
-    // Set PDO to throw exceptions on error
-    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
+$servername = "localhost";
+$username = "newuser";
+$password = "newpassword";
+$dbname = "myapp";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }

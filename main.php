@@ -7,23 +7,23 @@
     <form class="flex flex-wrap" action="" method="POST">
         <div class="w-full md:w-1/2 lg:w-1/3">
             <label class="block" for="firstname">First Name:</label>
-            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="text" name="firstname" id="firstname">
+            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="text" name="firstname">
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3">
             <label class="block" for="lastname">Last Name:</label>
-            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="text" name="lastname" id="lastname">
+            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="text" name="lastname">
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3">
             <label class="block" for="email">Email:</label>
-            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="email" name="email" id="email">
+            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="email" name="email">
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3">
             <label class="block" for="password">Password:</label>
-            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="password" name="password" id="password">
+            <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="password" name="password">
         </div>
         <div class="w-full md:w-1/2 lg:w-1/3">
             <label class="block" for="gender">Gender:</label>
-            <select class="w-full my-2 p-2 border border-gray-300 rounded-md" name="gender" id="gender">
+            <select class="w-full my-2 p-2 border border-gray-300 rounded-md" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select>
