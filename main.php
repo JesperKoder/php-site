@@ -61,8 +61,21 @@
         $sql = "SELECT * FROM users";
         $result = mysqli_query($conn, $sql);
         if($result){
-          $row = mysqli_fetch_assoc($result);
-          echo $row['firstname'];
+          while($row = mysqli_fetch_assoc($result)){
+            $id = $row['id'];
+            $firstname = $row['firstname'];
+            $lastname = $row['lastname'];
+            $email = $row['email'];
+            $password = $row['password'];
+            echo "<tr>
+            <th scope='row' class='px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white'>$id</th>
+            <td class='px-6 py-4'>$firstname</td>
+            <td class='px-6 py-4'>$lastname</td>
+            <td class='px-6 py-4'>$email</td>
+            <td class='px-6 py-4'>$password</td>
+            </tr>";
+          }
+          
         }
 
         ?>
