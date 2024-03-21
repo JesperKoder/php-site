@@ -1,7 +1,7 @@
 <?php 
 
-$con = new mysqli('localhost', 'newuser', 'newpassword', 'myapp');
+$conn = new mysqli('localhost', 'newuser', 'newpassword', 'myapp');
 
-if(!$con){
+if(!$conn){
     die(mysqli_error($con));
 }
