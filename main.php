@@ -24,7 +24,7 @@
             <input class="w-full my-2 p-2 border border-gray-300 rounded-md" type="password" name="password">
         </div>
         <div class="w-full">
-            <button class="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600" type="submit" name="submit">Add</button>
+            <button class="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600" type="submit" name="submit">Register</button>
         </div>
     </form>
 </div>
@@ -77,8 +77,8 @@
             <td class='px-6 py-4'>$email</td>
             <td class='px-6 py-4'>$password</td>
             <td class='px-6 py-4'>
-                <button><a href=''>Delete</a></button>
-                <button><a href=''>Edit</a></button>
+                <button class='bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-md'><a href='delete.php?delete_id=" . $id . "'>Delete</a></button>
+                <button class='bg-blue-500 hover:bg-blue    -600 text-white font-bold py-2 px-4 rounded-md'><a href='edit.php?edit_id=" .$id. "'>Edit</a></button>
             </td>
           </tr>";
           }
