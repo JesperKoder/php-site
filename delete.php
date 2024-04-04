@@ -12,9 +12,10 @@ if(isset($_GET['delete_id'])){
 
     // Check if data was deleted successfully
     if($stmt->affected_rows > 0){
-        echo "Data deleted successfully!";
+        // echo "Data deleted successfully!";
+        header("Location: index.php");
     } else {
-        echo "Fail";
+        die(mysqli_error($conn));
     }
 
     $stmt->close();

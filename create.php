@@ -25,7 +25,8 @@ if (isset($_POST['submit'])) {
 
   // Check if data was inserted successfully
   if ($stmt->affected_rows > 0) {
-    echo "Data inserted successfully!";
+    // echo "Data inserted successfully!";
+    header("Location: index.php");
   } else {
     echo "Registration failed. Please try again.";
   }
